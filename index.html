@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Skrollr-parallax-demo by paskainos</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Skrollr-parallax-demo</h1>
+        <p>Skrollr parallax demo</p>
+
+        <p class="view"><a href="https://github.com/paskainos/skrollr-parallax-demo">View the Project on GitHub <small>paskainos/skrollr-parallax-demo</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/paskainos/skrollr-parallax-demo/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/paskainos/skrollr-parallax-demo/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/paskainos/skrollr-parallax-demo">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="skrollr-parallax-demo" class="anchor" href="#skrollr-parallax-demo"><span class="octicon octicon-link"></span></a>skrollr-parallax-demo</h1>
+
+<p>This is a simple <a href="//github.com/Prinzhorn/skrollr">skrollr</a> parallax demo to help illustrate the concept outlined <a href="//github.com/Prinzhorn/skrollr/issues/576#issuecomment-51730312">here</a> used to remedy the seemingly arbitrary cutoff of page content in mobile, and particularly iOS devices.</p>
+
+<p>This demo consists of:</p>
+
+<ul>
+<li>A 'before' page which is simply a clone of <a href="http://prinzhorn.github.io/skrollr/examples/classic.html">the classic parallax example</a> with some additional page content added within <code>#skrollr-body</code> to reproduce the seemingly arbitrary cutoff.</li>
+<li>An 'after' page, identical to the before page, but which simply adds this keyframe information - <code>data-bottom="top: 0%;" data-top="top: 0%;"</code> - to the last element (the <code>#done</code> element in this case) within <code>#skrollr-body</code> to identify the end of (<code>#skrollr-body</code>) <a href="//github.com/Prinzhorn/skrollr#relative-mode-or-viewport-mode">relative page content</a> for skrollr, particularly in mobile, thus helping skrollr properly calculate mobile page content height and in turn 'fixing' the seemingly arbitrary cutoff.</li>
+</ul><h2>
+<a name="note" class="anchor" href="#note"><span class="octicon octicon-link"></span></a>NOTE:</h2>
+
+<p>The keyframe markup effects the document length. For instance, changing the above keyframe markup to <code>data-bottom-top="top: 0%;" data-top-bottom="top: 0%;"</code> will add 100% viewport height to the total document height, in turn causing the actual page bottom to scroll up out of view.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/paskainos">paskainos</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
