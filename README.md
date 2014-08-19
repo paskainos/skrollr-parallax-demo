@@ -5,7 +5,7 @@ This is a simple [skrollr](//github.com/Prinzhorn/skrollr) parallax demo to help
 
 This demo consists of:
 
-- A [**'before' page**](//paskainos.github.io/skrollr-parallax-demo/before.html) which is simply a clone of [the classic parallax example](http://prinzhorn.github.io/skrollr/examples/classic.html) with some additional page content added within `#skrollr-body` to reproduce the seemingly arbitrary cutoff.
+- A [**'before' page**](//paskainos.github.io/skrollr-parallax-demo/before.html) which is simply a clone of [the classic parallax example](http://prinzhorn.github.io/skrollr/examples/classic.html) with some additional page content added within `#skrollr-body` to reproduce the seemingly arbitrary cutoff on mobile devices.
 - An [**'after' page**](//paskainos.github.io/skrollr-parallax-demo/after.html), identical to the before page, but which simply adds this keyframe information - `data-bottom="top: 0%;" data-top="top: 0%;"` - to the last element (the `#done` element in this case) within `#skrollr-body` to identify the end of (`#skrollr-body`) [relative page content](//github.com/Prinzhorn/skrollr#relative-mode-or-viewport-mode) for skrollr, particularly in mobile, thus helping skrollr properly calculate mobile page content height and in turn 'fixing' the seemingly arbitrary cutoff.
 
 ##NOTE:##
