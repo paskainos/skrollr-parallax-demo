@@ -35,11 +35,13 @@
 
 <p>This demo consists of:</p>
 
-<ul>
-<li>A 'before' page which is simply a clone of <a href="http://prinzhorn.github.io/skrollr/examples/classic.html">the classic parallax example</a> with some additional page content added within <code>#skrollr-body</code> to reproduce the seemingly arbitrary cutoff.</li>
-<li>An 'after' page, identical to the before page, but which simply adds this keyframe information - <code>data-bottom="top: 0%;" data-top="top: 0%;"</code> - to the last element (the <code>#done</code> element in this case) within <code>#skrollr-body</code> to identify the end of (<code>#skrollr-body</code>) <a href="//github.com/Prinzhorn/skrollr#relative-mode-or-viewport-mode">relative page content</a> for skrollr, particularly in mobile, thus helping skrollr properly calculate mobile page content height and in turn 'fixing' the seemingly arbitrary cutoff.</li>
-</ul><h2>
-<a name="note" class="anchor" href="#note"><span class="octicon octicon-link"></span></a>NOTE:</h2>
+<dl>
+  <dt><a href="before.html">A 'before' page</a></dt>
+  <dd>This page is simply a clone of <a href="http://prinzhorn.github.io/skrollr/examples/classic.html">the classic parallax example</a> with some additional page content added within <code>#skrollr-body</code> to reproduce the seemingly arbitrary cutoff.</dd>
+  <dt><a href="after.html">An 'after' page</a></dt>
+  <dd>This page is identical to the before page, but which simply adds this keyframe information - <code>data-bottom="top: 0%;" data-top="top: 0%;"</code> - to the last element (the <code>#done</code> element in this case) within <code>#skrollr-body</code> to identify the end of (<code>#skrollr-body</code>) <a href="//github.com/Prinzhorn/skrollr#relative-mode-or-viewport-mode">relative page content</a> for skrollr, particularly in mobile, thus helping skrollr properly calculate mobile page content height and in turn 'fixing' the seemingly arbitrary cutoff.</dd>
+</dl>
+<h2><a name="note" class="anchor" href="#note"><span class="octicon octicon-link"></span></a>NOTE:</h2>
 
 <p>The keyframe markup effects the document length. For instance, changing the above keyframe markup to <code>data-bottom-top="top: 0%;" data-top-bottom="top: 0%;"</code> will add 100% viewport height to the total document height, in turn causing the actual page bottom to scroll up out of view.</p>
       </section>
@@ -49,6 +51,6 @@
       </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
-    
+
   </body>
 </html>
